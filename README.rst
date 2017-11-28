@@ -2,7 +2,8 @@
 vim-ipython
 ###########
 
-A two-way integration between Vim and IPython/Jupyter.
+A two-way integration between Vim and IPython.
+Forked from jjhelmus/vim-ipython to add python3 support
 
 IPython/Jupyter versions 0.11.x, 0.12.x, 0.13.x, 1.x, 2.x, 3.x, 4.x
 
@@ -213,7 +214,7 @@ Known issues:
   the standard clients. This is not a limitation of vim-ipython, but a
   limitation of those built-in clients, see `ipython/ipython#1873
   <https://github.com/ipython/ipython/issues/1873>`_
-- The ipdb integration is not yet re-implemented. Pending 
+- The ipdb integration is not yet re-implemented. Pending
   [IPython PR #3089](https://github.com/ipython/ipython/pull/3089)
 - If ``<CTRL-S>`` does not work inside your terminal, but you are able to run
   some of the other commands successfully (``<F5>``, for example), try running
