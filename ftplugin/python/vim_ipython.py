@@ -327,7 +327,9 @@ def get_doc_buffer(level=0):
     #vim.command('normal! ') # go to previous window
     if level == 0:
         # use the ReST formatting that ships with stock vim
-        vim.command('setlocal syntax=rst')
+        # switched to plain text because things like **kwargs screwed
+        # with the syntax
+        vim.command('setlocal syntax=text')
     else:
         # use Python syntax highlighting
         vim.command('setlocal syntax=python')
